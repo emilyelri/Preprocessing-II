@@ -179,6 +179,15 @@ nav a {
   font-size: 2rem;
   color: black;
   padding: 0px 15px;
+  transition-timing-function: ease-in;
+  transition: 0.2s;
+}
+nav a:hover {
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  -o-transform: scale(1.1);
+  color: teal;
 }
 .footer {
   width: 100%;
@@ -217,7 +226,14 @@ nav a {
     margin: 10px auto 0;
   }
   .topbar h1 {
+    text-decoration: none;
     margin: 20px;
+  }
+  .topbar h1:hover {
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
   }
 }
 .home .fun-bus {
@@ -299,6 +315,21 @@ nav a {
 .home .btn {
   background-color: teal;
   color: white;
+  font-size: 2rem;
+  text-align: center;
+  padding: 12px;
+  border: 1px solid grey;
+  border-radius: 10px;
+  transition-timing-function: ease-in;
+  transition: 0.2s;
+}
+.home .btn:hover {
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  -o-transform: scale(1.1);
+  background-color: white;
+  color: teal;
   font-size: 2rem;
   text-align: center;
   padding: 12px;

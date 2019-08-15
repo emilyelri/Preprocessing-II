@@ -20,3 +20,15 @@
     border: 1px solid grey;
     border-radius: 10px;
 }
+
+.scale (@num) {
+	-webkit-transform: scale(@num);
+	-moz-transform: 	 scale(@num);
+	-ms-transform: 		 scale(@num);
+	-o-transform: 		 scale(@num);
+}
+
+.ease() {
+    transition-timing-function: ease-in;
+    transition: 0.2s;
+}
