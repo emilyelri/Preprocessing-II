@@ -165,6 +165,7 @@ img {
 }
 .container {
   width: 80%;
+  max-width: 800px;
   margin: 0 auto;
 }
 nav {
@@ -182,10 +183,10 @@ nav a {
   transition: 0.2s;
 }
 nav a:hover {
-  -webkit-transform: scale(1.1);
-  -moz-transform: scale(1.1);
-  -ms-transform: scale(1.1);
-  -o-transform: scale(1.1);
+  -webkit-transform: scale(1.2);
+  -moz-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  -o-transform: scale(1.2);
   color: teal;
 }
 .footer {
@@ -211,8 +212,10 @@ nav a:hover {
   align-items: center;
   background-color: white;
   width: 100%;
-  margin: 30px auto 0;
+  margin: 0 auto;
   padding: 30px 50px;
+  position: fixed;
+  z-index: 10;
   border-bottom: 2px dashed silver;
 }
 @media (max-width: 800px) {
@@ -222,7 +225,8 @@ nav a:hover {
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    margin: 10px auto 0;
+    margin: 0 auto;
+    padding: 0px 50px 15px;
   }
   .topbar h1 {
     text-decoration: none;
@@ -233,6 +237,34 @@ nav a:hover {
     -moz-transform: scale(1.1);
     -ms-transform: scale(1.1);
     -o-transform: scale(1.1);
+  }
+}
+.home {
+  padding-top: 5%;
+}
+@media (max-width: 1000px) {
+  .home {
+    padding-top: 8%;
+  }
+}
+@media (max-width: 900px) {
+  .home {
+    padding-top: 10%;
+  }
+}
+@media (max-width: 800px) {
+  .home {
+    padding-top: 15%;
+  }
+}
+@media (max-width: 600px) {
+  .home {
+    padding-top: 20%;
+  }
+}
+@media (max-width: 500px) {
+  .home {
+    padding-top: 23%;
   }
 }
 .home .fun-bus {
@@ -323,10 +355,10 @@ nav a:hover {
   transition: 0.2s;
 }
 .home .btn:hover {
-  -webkit-transform: scale(1.1);
-  -moz-transform: scale(1.1);
-  -ms-transform: scale(1.1);
-  -o-transform: scale(1.1);
+  -webkit-transform: scale(1.05);
+  -moz-transform: scale(1.05);
+  -ms-transform: scale(1.05);
+  -o-transform: scale(1.05);
   background-color: white;
   color: teal;
   font-size: 2rem;
