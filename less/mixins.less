@@ -1,1 +1,34 @@
 // Mixins in here
+
+.flex(@dir:row, @justify:space-around, @align:center) {
+    display: flex;
+    flex-direction: @dir;
+    justify-content: @justify;
+    align-items: @align;
+}
+
+.bottom-border () {
+    border-bottom: 2px dashed silver;
+}
+
+.buttons(@bg:white; @color:black) {
+    background-color: @bg;
+    color: @color;
+    font-size: 2rem;
+    text-align:center;
+    padding: 12px;
+    border: 1px solid grey;
+    border-radius: 10px;
+}
+
+.scale (@num) {
+	-webkit-transform: scale(@num);
+	-moz-transform: 	 scale(@num);
+	-ms-transform: 		 scale(@num);
+	-o-transform: 		 scale(@num);
+}
+
+.ease() {
+    transition-timing-function: ease-in;
+    transition: 0.2s;
+}
